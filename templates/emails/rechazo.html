@@ -1,0 +1,249 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inscripción Rechazada — {{sorteoNombre}}</title>
+</head>
+
+<body style="margin:0;padding:0;background-color:#f5f5f5;font-family:Arial,Helvetica,sans-serif;">
+
+    <!-- Preheader -->
+    <div style="display:none;max-height:0;overflow:hidden;font-size:1px;color:#f5f5f5;">
+        Hola {{nombres}}, tu inscripción para {{sorteoNombre}} ha sido revisada.
+    </div>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+        <tr>
+            <td align="center" style="padding:32px 16px;">
+
+                <!-- ╔══ CONTENEDOR PRINCIPAL ══╗ -->
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;
+                    overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+
+                    <!-- ══ HEADER ══════════════════════════════════════════ -->
+                    <tr>
+                        <td style="background:linear-gradient(135deg,#7f1d1d 0%,#dc2626 60%,#f87171 100%);padding:0;">
+                            <!-- Franja decorativa superior -->
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="height:5px;background:linear-gradient(90deg,#991b1b,#f87171,#991b1b);">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:28px 32px 24px;text-align:center;">
+                                        <!-- Logo -->
+                                        <img src="cid:{{logoCid}}" alt="COOPSERP" width="140" height="auto"
+                                            style="display:block;margin:0 auto 16px;border-radius:8px;background:rgba(255,255,255,0.15);padding:8px 12px;" />
+                                        <!-- Título -->
+                                        <div style="font-size:11px;letter-spacing:4px;color:#fca5a5;
+                                               text-transform:uppercase;font-weight:700;margin-bottom:8px;">
+                                            ✦ ESTADO DE INSCRIPCIÓN ✦
+                                        </div>
+                                        <h1 style="margin:0;font-size:26px;font-weight:900;color:#ffffff;
+                                              text-transform:uppercase;letter-spacing:2px;
+                                              text-shadow:0 2px 8px rgba(0,0,0,0.2);">
+                                            Inscripción Rechazada
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <!-- Franja decorativa inferior -->
+                                <tr>
+                                    <td
+                                        style="height:4px;background:linear-gradient(90deg,transparent,#f87171,#991b1b,transparent);">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ══ SALUDO ════════════════════════════════════════════ -->
+                    <tr>
+                        <td style="padding:32px 36px 0;">
+                            <h2 style="margin:0 0 8px;font-size:20px;color:#1f2937;font-weight:800;">
+                                Hola, {{nombres}} {{apellidos}}
+                            </h2>
+                            <p style="margin:0;font-size:15px;color:#374151;line-height:1.6;">
+                                Hemos revisado tu inscripción para el sorteo <strong
+                                    style="color:#dc2626;">{{sorteoNombre}}</strong>
+                                y lamentamos informarte que <strong style="color:#dc2626;">no ha sido aprobada</strong>.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- ══ DATOS DEL SORTEO ══════════════════════════════════ -->
+                    <tr>
+                        <td style="padding:24px 36px 0;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                                style="background:#fef2f2;border-radius:12px;border:1px solid #fca5a5;">
+                                <tr>
+                                    <td style="padding:20px 24px;">
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <!-- Documento -->
+                                                <td width="33%" style="padding:0 8px 0 0;vertical-align:top;">
+                                                    <div
+                                                        style="font-size:9px;font-weight:700;color:#6b7280;
+                                                           text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">
+                                                        N° Documento
+                                                    </div>
+                                                    <div style="font-size:15px;font-weight:700;color:#1f2937;">
+                                                        {{documento}}
+                                                    </div>
+                                                </td>
+                                                <!-- Sorteo -->
+                                                <td width="34%" style="padding:0 8px;vertical-align:top;
+                                                      border-left:1px solid #fca5a5;border-right:1px solid #fca5a5;">
+                                                    <div
+                                                        style="font-size:9px;font-weight:700;color:#6b7280;
+                                                           text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">
+                                                        Sorteo
+                                                    </div>
+                                                    <div style="font-size:15px;font-weight:700;color:#1f2937;">
+                                                        {{sorteoNombre}}
+                                                    </div>
+                                                </td>
+                                                <!-- Fecha -->
+                                                <td width="33%" style="padding:0 0 0 8px;vertical-align:top;">
+                                                    <div
+                                                        style="font-size:9px;font-weight:700;color:#6b7280;
+                                                           text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">
+                                                        Fecha del Sorteo
+                                                    </div>
+                                                    <div style="font-size:14px;font-weight:700;color:#1f2937;">
+                                                        {{fechaSorteo}}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ══ MOTIVO DEL RECHAZO ════════════════════════════════ -->
+                    <tr>
+                        <td style="padding:28px 36px 0;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:12px;">
+                                <tr>
+                                    <td style="border-top:1px solid #fca5a5;"></td>
+                                    <td style="white-space:nowrap;padding:0 14px;">
+                                        <span style="font-size:11px;font-weight:800;color:#dc2626;
+                                               text-transform:uppercase;letter-spacing:2px;
+                                               background:#ffffff;padding:4px 16px;
+                                               border:1px solid #dc2626;border-radius:20px;">
+                                            Motivo del Rechazo
+                                        </span>
+                                    </td>
+                                    <td style="border-top:1px solid #fca5a5;"></td>
+                                </tr>
+                            </table>
+
+                            <div style="background:#fef2f2;border-radius:12px;padding:20px 24px;
+                                  border-left:4px solid #dc2626;">
+                                <div style="display:flex;align-items:flex-start;gap:12px;">
+                                    <span style="font-size:24px;">📋</span>
+                                    <div>
+                                        <p
+                                            style="margin:0;font-size:15px;color:#1f2937;line-height:1.6;font-weight:500;">
+                                            {{comentario}}
+                                        </p>
+                                        <p style="margin:8px 0 0;font-size:12px;color:#6b7280;">
+                                            Motivo proporcionado por el equipo de COOPSERP
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- ══ INFORMACIÓN ADICIONAL ══════════════════════════════ -->
+                    <tr>
+                        <td style="padding:24px 36px 0;">
+                            <div style="background:#f8fafc;border-radius:12px;padding:20px 24px;
+                                  border:1px solid #e2e8f0;">
+                                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                                    <span style="font-size:20px;">💡</span>
+                                    <h4 style="margin:0;font-size:14px;color:#1f2937;font-weight:700;">
+                                        ¿Qué puedes hacer?
+                                    </h4>
+                                </div>
+                                <ul style="margin:0;padding:0 0 0 20px;color:#475569;font-size:14px;line-height:1.8;">
+                                    <li>Verifica que todos tus datos estén correctos y actualizados</li>
+                                    <li>Asegúrate de cumplir con todos los requisitos del sorteo</li>
+                                    <li>Contacta a tu director de agencia para más información</li>
+                                    <li>Puedes intentar inscribirte nuevamente si el sorteo sigue abierto</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- ══ BOTÓN PARA INTENTAR NUEVAMENTE ══════════════════════ -->
+                    {{#if inscripcionesAbiertas}}
+                    <tr>
+                        <td style="padding:28px 36px 12px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <div style="background:#f8fafc;border-radius:16px;padding:20px;
+                                              border:2px dashed #94a3b8;">
+                                            <p style="font-size:14px;color:#475569;margin-bottom:12px;">
+                                                Las inscripciones para este sorteo aún están abiertas
+                                            </p>
+                                            <a href="{{urlInscripcion}}" style="display:inline-block;
+                                                      background:linear-gradient(135deg,#2563eb,#1d4ed8);
+                                                      color:#ffffff !important;
+                                                      padding:14px 40px;
+                                                      border-radius:50px;
+                                                      font-size:16px;
+                                                      font-weight:700;
+                                                      text-decoration:none;
+                                                      box-shadow:0 4px 16px rgba(37,99,235,0.4);
+                                                      transition:all 0.3s ease;
+                                                      letter-spacing:0.5px;">
+                                                Intentar nuevamente
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    {{/if}}
+
+                    <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+                    <tr>
+                        <td style="padding:28px 36px 24px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                                style="border-top:1px solid #e5e7eb;padding-top:20px;">
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <img src="cid:{{logoCid}}" alt="COOPSERP" width="90" height="auto"
+                                            style="display:block;margin:0 auto 10px;opacity:0.6;" />
+                                        <p style="margin:0 0 4px;font-size:12px;color:#6b7280;font-weight:600;">
+                                            COOPSERP — Cooperativa de Servidores Públicos y Jubilados de Colombia
+                                        </p>
+                                        <p style="margin:0 0 4px;font-size:11px;color:#9ca3af;">
+                                            Este es un mensaje automático, por favor no respondas este correo.
+                                        </p>
+                                        <p style="margin:0;font-size:11px;color:#9ca3af;">
+                                            © {{year}} Todos los derechos reservados.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- ╚══ FIN CONTENEDOR PRINCIPAL ══╝ -->
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
